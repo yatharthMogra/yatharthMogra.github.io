@@ -6,32 +6,40 @@
 }
 
 :root {
-	--text-primary: #1a1a1a;
-	--text-secondary: #4a4a4a;
-	--bg-primary: #ffffff;
-	--bg-secondary: #f8f8f8;
-	--accent: #2563eb;
-	--accent-hover: #1d4ed8;
-	--border: #e5e7eb;
-	--shadow: rgba(0, 0, 0, 0.1);
+	--text-primary: #2c2c2c;
+	--text-secondary: #5a5a5a;
+	--bg-primary: #f5ede4;
+	--bg-secondary: #ede4d8;
+	--accent: #7fb3c8;
+	--accent-hover: #6a9fb3;
+	--border: #d4c4b0;
+	--shadow: rgba(127, 179, 200, 0.15);
+	--warm-beige: #e8f0f2;
+	--light-teal: #b8d4d8;
+	--wood-tone: #c9b8a5;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--text-primary: #f3f4f6;
-		--text-secondary: #d1d5db;
-		--bg-primary: #111827;
-		--bg-secondary: #1f2937;
-		--accent: #3b82f6;
-		--accent-hover: #60a5fa;
-		--border: #374151;
-		--shadow: rgba(0, 0, 0, 0.3);
+		--text-primary: #e8e6e3;
+		--text-secondary: #b8b5b0;
+		--bg-primary: #2a2825;
+		--bg-secondary: #35322e;
+		--accent: #7fb3c8;
+		--accent-hover: #8fc4d8;
+		--border: #4a4540;
+		--shadow: rgba(127, 179, 200, 0.2);
+		--warm-beige: #3a3632;
+		--light-teal: #5a6d70;
+		--wood-tone: #4a4038;
 	}
 }
 
 html {
 	scroll-behavior: smooth;
 	font-size: 16px;
+	background-color: var(--bg-primary);
+	min-height: 100%;
 }
 
 body {
@@ -39,12 +47,18 @@ body {
 	line-height: 1.6;
 	color: var(--text-primary);
 	background-color: var(--bg-primary);
+	min-height: 100vh;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	line-height: 1.2;
 	margin-bottom: 0.5em;
 	color: var(--text-primary);
@@ -91,16 +105,15 @@ a:hover {
 header {
 	position: sticky;
 	top: 0;
-	background-color: var(--bg-primary);
 	border-bottom: 1px solid var(--border);
 	z-index: 100;
 	backdrop-filter: blur(10px);
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(245, 237, 228, 0.95);
 }
 
 @media (prefers-color-scheme: dark) {
 	header {
-		background-color: rgba(17, 24, 39, 0.9);
+		background-color: rgba(42, 40, 37, 0.95);
 	}
 }
 
@@ -149,6 +162,7 @@ main {
 	max-width: 900px;
 	margin: 0 auto;
 	padding: 2rem 1.5rem;
+	background-color: var(--bg-primary);
 }
 
 section {
@@ -257,7 +271,7 @@ section.active {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 2rem;
-	background-color: var(--bg-secondary);
+	background-color: var(--warm-beige);
 	border: 1px solid var(--border);
 	border-radius: 8px;
 	padding: 2rem;
@@ -309,12 +323,14 @@ section.active {
 	background-color: var(--accent);
 	color: white;
 	border-radius: 4px;
-	transition: background-color 0.2s ease;
+	transition: all 0.2s ease;
+	box-shadow: 0 2px 4px var(--shadow);
 }
 
 .project-links a:hover {
 	background-color: var(--accent-hover);
 	color: white;
+	box-shadow: 0 4px 8px var(--shadow);
 }
 
 /* CV Section */
@@ -328,11 +344,12 @@ section.active {
 .cv-download-icon {
 	font-size: 1.5rem;
 	color: var(--accent);
-	transition: color 0.2s ease;
+	transition: all 0.2s ease;
 }
 
 .cv-download-icon:hover {
 	color: var(--accent-hover);
+	transform: scale(1.1);
 }
 
 .cv-container {
@@ -367,7 +384,7 @@ section.active {
 .cv-nav-link:hover {
 	color: var(--accent);
 	border-left-color: var(--accent);
-	background-color: var(--bg-secondary);
+	background-color: var(--warm-beige);
 }
 
 .cv-nav-link.active {
@@ -383,7 +400,7 @@ section.active {
 }
 
 .cv-card {
-	background-color: var(--bg-secondary);
+	background-color: var(--warm-beige);
 	border: 1px solid var(--border);
 	border-radius: 8px;
 	padding: 2rem;
@@ -432,8 +449,11 @@ section.active {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 1.5rem;
-	padding-bottom: 2rem;
+	padding: 1.5rem;
 	border-bottom: 1px solid var(--border);
+	background-color: var(--warm-beige);
+	border-radius: 8px;
+	margin-bottom: 1rem;
 }
 
 .blog-post.no-cover {
@@ -441,7 +461,8 @@ section.active {
 }
 
 .blog-post:last-child {
-	border-bottom: none;
+	border-bottom: 1px solid var(--border);
+	margin-bottom: 0;
 }
 
 .blog-post-cover {
@@ -596,6 +617,7 @@ button:focus {
 
 /* Print styles */
 @media print {
+
 	header,
 	footer {
 		display: none;
@@ -610,5 +632,3 @@ button:focus {
 		page-break-inside: avoid;
 	}
 }
-
-

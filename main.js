@@ -1,14 +1,14 @@
 // Navigation: Show/hide sections on click
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 	const sections = document.querySelectorAll('section[id]');
 	const navLinks = document.querySelectorAll('nav a[href^="#"]');
-	
+
 	// Function to show a specific section and hide others
 	function showSection(sectionId) {
 		sections.forEach(section => {
 			section.classList.remove('active');
 		});
-		
+
 		const targetSection = document.getElementById(sectionId);
 		if (targetSection) {
 			targetSection.classList.add('active');
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				behavior: 'smooth'
 			});
 		}
-		
+
 		// Update active nav link
 		navLinks.forEach(link => {
 			link.classList.remove('active');
@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		});
 	}
-	
+
 	// Handle navigation link clicks
 	navLinks.forEach(link => {
-		link.addEventListener('click', function(e) {
+		link.addEventListener('click', function (e) {
 			const href = this.getAttribute('href');
 			if (href === '#' || !href.startsWith('#')) return;
-			
+
 			e.preventDefault();
 			const targetId = href.substring(1);
 			showSection(targetId);
@@ -51,9 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		showSection('about');
 		history.replaceState(null, '', '#about');
 	}
-	
+
 	// Handle browser back/forward buttons
-	window.addEventListener('hashchange', function() {
+	window.addEventListener('hashchange', function () {
 		const sectionId = window.location.hash ? window.location.hash.substring(1) : 'about';
 		showSection(sectionId);
 	});
@@ -76,7 +76,7 @@ function setupCVNavigation() {
 
 	// Smooth scrolling for CV nav links (within CV section)
 	cvNavLinks.forEach(link => {
-		link.addEventListener('click', function(e) {
+		link.addEventListener('click', function (e) {
 			e.preventDefault();
 			const href = this.getAttribute('href');
 			const targetId = href.substring(1);
@@ -86,7 +86,7 @@ function setupCVNavigation() {
 				// Find the CV section container
 				const cvSection = document.getElementById('cv');
 				if (!cvSection) return;
-				
+
 				// Calculate position relative to CV section
 				const cvSectionTop = cvSection.getBoundingClientRect().top + window.pageYOffset;
 				const targetSectionTop = targetSection.getBoundingClientRect().top + window.pageYOffset;
@@ -139,7 +139,7 @@ function setupCVNavigation() {
 // Blog post rendering from JSON
 async function loadBlogPosts() {
 	const blogContainer = document.getElementById('blog-posts');
-	
+
 	if (!blogContainer) {
 		return;
 	}
@@ -149,13 +149,13 @@ async function loadBlogPosts() {
 
 	try {
 		const response = await fetch('./blog.json');
-		
+
 		if (!response.ok) {
 			throw new Error(`HTTP error! status: ${response.status}`);
 		}
-		
+
 		const posts = await response.json();
-		
+
 		if (!Array.isArray(posts) || posts.length === 0) {
 			blogContainer.innerHTML = '<div class="blog-loading">No blog posts available.</div>';
 			return;
@@ -171,7 +171,7 @@ async function loadBlogPosts() {
 			});
 
 			const hasCoverImage = post.coverImage && post.coverImage.trim() !== '';
-			const coverImageHtml = hasCoverImage ? 
+			const coverImageHtml = hasCoverImage ?
 				`<img src="${escapeHtml(post.coverImage)}" alt="${escapeHtml(post.title)}" class="blog-post-cover">` : '';
 
 			return `

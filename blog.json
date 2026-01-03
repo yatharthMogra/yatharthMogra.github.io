@@ -1,0 +1,28 @@
+[
+	{
+		"title": "Building a Static Portfolio Site",
+		"date": "2024-01-15",
+		"excerpt": "Why I chose vanilla HTML, CSS, and JavaScript over frameworks for my personal portfolio. A brief exploration of simplicity and performance in web development.",
+		"slug": "building-static-portfolio",
+		"readTime": "3 min read",
+		"coverImage": ""
+	},
+	{
+		"title": "Learning Through Building",
+		"date": "2024-01-10",
+		"excerpt": "Reflections on how building projects has shaped my understanding of software engineering. The difference between knowing concepts and applying them in practice.",
+		"slug": "learning-through-building",
+		"readTime": "5 min read",
+		"coverImage": ""
+	},
+	{
+		"title": "Thoughts on Minimal Design",
+		"date": "2024-01-05",
+		"excerpt": "Why less is often more in web design. Exploring the principles of minimalism and how they apply to creating effective user experiences.",
+		"slug": "thoughts-on-minimal-design",
+		"readTime": "4 min read",
+		"coverImage": ""
+	}
+]
+
+

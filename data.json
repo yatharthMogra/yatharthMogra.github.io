@@ -41,6 +41,18 @@
 		]
 	},
 	"projects": {
+		"2026": [
+			{
+				"name": "Google Tunix Hack: Teach a LLM to reason using tunix",
+				"description": "Most open-source or open-weight language models can give you an answer. But they typically don’t ‘show their work’ - the steps they went through to arrive at that conclusion in a consistent manner. Here, we use Tunix, Google’s new JAX-native library for LLM post-training, to train a model to show its work by laying out a reasoning trace before landing on an answer.",
+				"techStack": "Gemma2-2b-it, Tunix, Jax, SFT, LoRA",
+				"image": "/assets/project_headers/tunix_header.png",
+				"imageAlt": "Tunix Library Thumbnail",
+				"links": {
+					"code": "https://github.com/yatharthMogra/google-tunix-hack.git"
+				}
+			}
+		],
 		"2025": [
 			{
 				"name": "DocuFlow: Auditing Intelligence Layer",

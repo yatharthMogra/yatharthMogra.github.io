@@ -1,65 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Personal portfolio of Yatharth Mogra - Software Engineer, IIT Mandi">
+	<title>Yatharth Mogra</title>
+	<link rel="stylesheet" href="./style.css">
 	<script src="https://kit.fontawesome.com/15821859f9.js" crossorigin="anonymous"></script>
-	<style src="./style.css"></style>
-	<title><i class="fas fa-jedi"></i>Yatharth Mogra</title>
 </head>
+
 <body>
-	<nav>
-		<ul>
-			<li>Yatharth Mogra</li>
-			<li>Home</li>
-			<li>Blog</li>
-			<li>Projects</li>
-			<li>Contact</li>
-		</ul>
-	</nav>
-	<main>
-		<div>
-			<img src="" alt="Yatharth at Parashar lake, Himachal Pradesh">
-			<h2>Yatharth Mogra</h2>
-			<h4>Undergraduate</h4>
-			<h3>IIT Mandi</h3>
+	<header>
+		<nav>
 			<ul>
-				<li><i class="fab fa-github"></i></li>
-				<li><i class="fab fa-facebook"></i></li>
-				<li><i class="fas fa-envelope"></i></li>
-				<li><i class="fab fa-linkedin"></i></li>
+				<li><a href="#about">Yatharth Mogra</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#cv">CV</a></li>
+				<li><a href="#blog">Blog</a></li>
 			</ul>
-		</div>
-		<div>
-			<div>
-				<h2>Biography</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<div>
-				<div>
-					<strong>Intrests</strong>
-					<ol>
-						<li>Machine Learning</li>
-						<li>Web Devlopment</li>
-						<li>Competitve Coding</li>
-						<li>Vector Graphic Design</li>
-					</ol>
+		</nav>
+	</header>
+
+	<main>
+		<section id="about">
+			<div class="about-main">
+				<div class="about-photo">
+					<img src="/assets/profile_pic.jpeg" alt="Yatharth at Paul's New Delhi" class="profile-image">
 				</div>
-				<div>
-					<strong><i class="fas fa-award"></i>Education</strong>
-					<ol>
-						<li>BTech in Mechanical Engineering, 2019-2023</li>
+				<div class="about-description">
+					<h1>Yatharth Mogra</h1>
+					<p>MS CS student focused on systems, ML, and building things that don't collapse under real-world
+						constraints. Previously worked as a software engineer, now more interested in depth than
+						buzzwords.</p>
+					<p>Currently exploring the intersection of machine learning and systems engineering, with a
+						particular interest in how we can build reliable systems that scale. I care about writing code
+						that's both correct and maintainable, and I enjoy the process of breaking down complex problems
+						into manageable pieces.</p>
+					<p>The kinds of problems that excite me are ones where the solution isn't immediately obvious—where
+						you need to understand the fundamentals deeply before you can build something that actually
+						works.</p>
+					<ul class="social-links">
+						<li><a href="https://github.com" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+						<li><a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+						</li>
+						<li><a href="mailto:email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+						</li>
+						<li><a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="about-updates">
+				<h2>Updates</h2>
+				<ul class="updates-list">
+					<li><span class="update-date">Aug 2025</span> — Started MS CS at NYU, focusing on ML systems</li>
+					<li><span class="update-date">May 2025</span> — Wrapped up X project on Y</li>
+					<li><span class="update-date">Jan 2025</span> — Interned at Z, worked on A</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="projects">
+			<h2>Projects</h2>
+			<div class="projects-container">
+				<div class="project-year-group">
+					<h3 class="year-header">2025</h3>
+					<article class="project-card">
+						<div class="project-image">
+							<img src="" alt="Project screenshot" class="project-screenshot">
+						</div>
+						<div class="project-content">
+							<h4>Project Name</h4>
+							<p>What the project is and why it exists. This addresses a specific problem in the real
+								world. I built this to solve X because Y was insufficient. The core challenge was Z,
+								which I approached by doing A, B, and C.</p>
+							<p class="project-tech-stack"><strong>Tech stack:</strong> JavaScript, HTML, CSS</p>
+							<div class="project-links">
+								<a href="https://github.com" target="_blank" rel="noopener noreferrer">Code</a>
+								<a href="https://example.com" target="_blank" rel="noopener noreferrer">Blog</a>
+							</div>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<div class="project-image">
+							<img src="" alt="Project screenshot" class="project-screenshot">
+						</div>
+						<div class="project-content">
+							<h4>Project Name</h4>
+							<p>What the project is and why it exists. This addresses a specific problem in the real
+								world. I built this to solve X because Y was insufficient. The core challenge was Z,
+								which I approached by doing A, B, and C.</p>
+							<p class="project-tech-stack"><strong>Tech stack:</strong> Python, Machine Learning</p>
+							<div class="project-links">
+								<a href="https://github.com" target="_blank" rel="noopener noreferrer">Code</a>
+								<a href="https://example.com" target="_blank" rel="noopener noreferrer">Blog</a>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<div class="project-year-group">
+					<h3 class="year-header">2024</h3>
+					<article class="project-card">
+						<div class="project-image">
+							<img src="" alt="Project screenshot" class="project-screenshot">
+						</div>
+						<div class="project-content">
+							<h4>Project Name</h4>
+							<p>What the project is and why it exists. This addresses a specific problem in the real
+								world. I built this to solve X because Y was insufficient. The core challenge was Z,
+								which I approached by doing A, B, and C.</p>
+							<p class="project-tech-stack"><strong>Tech stack:</strong> React, Node.js</p>
+							<div class="project-links">
+								<a href="https://github.com" target="_blank" rel="noopener noreferrer">Code</a>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="cv">
+			<div class="cv-header">
+				<h2>CV</h2>
+				<a href="/assets/Yatharth's_DL.pdf" download class="cv-download-icon" aria-label="Download CV as PDF">
+					<i class="fas fa-file-pdf"></i>
+				</a>
+			</div>
+			<div class="cv-container">
+				<nav class="cv-sidebar">
+					<ul>
+						<li><a href="#cv-general" class="cv-nav-link">General Information</a></li>
+						<li><a href="#cv-education" class="cv-nav-link">Education</a></li>
+						<li><a href="#cv-interests" class="cv-nav-link">Academic Interests</a></li>
+						<li><a href="#cv-work" class="cv-nav-link">Work Experience</a></li>
+						<li><a href="#cv-research" class="cv-nav-link">Research Experience</a></li>
+						<li><a href="#cv-skills" class="cv-nav-link">Technical Skills</a></li>
+						<li><a href="#cv-honors" class="cv-nav-link">Honors & Awards</a></li>
+						<li><a href="#cv-other" class="cv-nav-link">Other Interests</a></li>
+					</ul>
+				</nav>
+				<div class="cv-content">
+					<div id="cv-general" class="cv-card">
+						<h3>General Information</h3>
+						<p>Name: Yatharth Mogra</p>
+						<p>Email: email@example.com</p>
+						<p>Location: City, Country</p>
+					</div>
+
+					<div id="cv-education" class="cv-card">
+						<h3>Education</h3>
+						<p><strong>BTech in Mechanical Engineering</strong>, 2019-2023</p>
 						<p>Indian Institute of Technology Mandi</p>
+					</div>
 
-					</ol>
+					<div id="cv-interests" class="cv-card">
+						<h3>Academic Interests</h3>
+						<ul>
+							<li>Machine Learning</li>
+							<li>Systems Engineering</li>
+							<li>Web Development</li>
+							<li>Competitive Programming</li>
+						</ul>
+					</div>
+
+					<div id="cv-work" class="cv-card">
+						<h3>Work Experience</h3>
+						<p><strong>Software Engineer</strong>, Company Name</p>
+						<p>Date Range — Description of work and achievements.</p>
+					</div>
+
+					<div id="cv-research" class="cv-card">
+						<h3>Research Experience</h3>
+						<p><strong>Research Position</strong>, Institution Name</p>
+						<p>Date Range — Description of research work and contributions.</p>
+					</div>
+
+					<div id="cv-skills" class="cv-card">
+						<h3>Technical Skills</h3>
+						<ul>
+							<li>Programming Languages: Python, JavaScript, C++</li>
+							<li>Frameworks: React, Node.js</li>
+							<li>Tools: Git, Docker, Linux</li>
+						</ul>
+					</div>
+
+					<div id="cv-honors" class="cv-card">
+						<h3>Honors & Awards</h3>
+						<ul>
+							<li>Award Name, Year</li>
+							<li>Recognition Name, Year</li>
+						</ul>
+					</div>
+
+					<div id="cv-other" class="cv-card">
+						<h3>Other Interests</h3>
+						<p>Vector Graphic Design, Reading, Hiking</p>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
+		<section id="blog">
+			<h2>Blog</h2>
+			<p>Technical concepts, project breakdowns, lessons learned, and thoughts on software engineering.</p>
+			<div id="blog-posts" class="blog-posts">
+				<!-- Blog posts will be rendered here by JavaScript -->
+			</div>
+		</section>
 	</main>
+
+	<footer>
+		<p>&copy; 2024 Yatharth Mogra. Built with vanilla HTML, CSS, and JavaScript.</p>
+	</footer>
+
 	<script src="./main.js"></script>
 </body>
+
 </html>

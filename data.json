@@ -1,0 +1,232 @@
+{
+	"about": {
+		"name": "Yatharth Mogra",
+		"profileImage": "/assets/profile_pic.jpeg",
+		"profileImageAlt": "Yatharth at Paul's New Delhi",
+		"description": [
+			"I’m a computer science graduate student with a background in building real systems. I’ve worked as a software developer, competed in hackathons, and spend an unhealthy amount of time turning vague ideas into working products. I care about clean abstractions, strong fundamentals, and shipping things that actually get used. Lately, I’m focused on machine learning systems, reasoning models, and building tools that reduce human busywork.",
+			"Right now, I work as a research assistant at NYU Langone Health, where I am building deep learning pipelines to predict time to total knee replacement. The work sits at the intersection of healthcare and ML, with a focus on translating data into clinically meaningful signals.",
+			"I graduated from IIT Mandi and worked as a software development engineer at Walmart, building production systems at scale. Alongside that, I’ve consistently explored ideas through hackathons and side projects, which shaped how I think about speed, constraints, and practical problem-solving."
+		],
+		"socialLinks": [
+			{
+				"platform": "GitHub",
+				"url": "https://github.com/yatharthMogra",
+				"icon": "fab fa-github"
+			},
+			{
+				"platform": "Email",
+				"url": "mailto:yatharthmogra@gmail.com",
+				"icon": "fas fa-envelope"
+			},
+			{
+				"platform": "LinkedIn",
+				"url": "https://linkedin.com/in/yatharth-mogra",
+				"icon": "fab fa-linkedin"
+			}
+		],
+		"updates": [
+			{
+				"date": "Nov 2025",
+				"description": "Completed 2nd out of 220 Teams in AWS Financial Hackathon 2025."
+			},
+			{
+				"date": "Oct 2025",
+				"description": "Won Best Cloudflare Implementation Award in Nasa Space Apps Challenge 2025."
+			},
+			{
+				"date": "Sep 2025",
+				"description": "Joined MS in CS @ NYU, in the city of New York!"
+			}
+		]
+	},
+	"projects": {
+		"2025": [
+			{
+				"name": "Project Name",
+				"description": "What the project is and why it exists. This addresses a specific problem in the real world. I built this to solve X because Y was insufficient. The core challenge was Z, which I approached by doing A, B, and C.",
+				"techStack": "JavaScript, HTML, CSS",
+				"image": "",
+				"imageAlt": "Project screenshot",
+				"links": {
+					"code": "https://github.com",
+					"blog": "https://example.com"
+				}
+			},
+			{
+				"name": "Project Name",
+				"description": "What the project is and why it exists. This addresses a specific problem in the real world. I built this to solve X because Y was insufficient. The core challenge was Z, which I approached by doing A, B, and C.",
+				"techStack": "Python, Machine Learning",
+				"image": "",
+				"imageAlt": "Project screenshot",
+				"links": {
+					"code": "https://github.com",
+					"blog": "https://example.com"
+				}
+			}
+		],
+		"2024": [
+			{
+				"name": "Project Name",
+				"description": "What the project is and why it exists. This addresses a specific problem in the real world. I built this to solve X because Y was insufficient. The core challenge was Z, which I approached by doing A, B, and C.",
+				"techStack": "React, Node.js",
+				"image": "",
+				"imageAlt": "Project screenshot",
+				"links": {
+					"code": "https://github.com"
+				}
+			}
+		]
+	},
+	"cv": {
+		"resumeUrl": "/assets/Yatharth's_DL.pdf",
+		"sections": [
+			{
+				"id": "cv-general",
+				"title": "General Information",
+				"type": "paragraphs",
+				"content": [
+					"Name: Yatharth Mogra",
+					"Email: yatharthmogra at gmail dot com",
+					"Location: New York, United States"
+				]
+			},
+			{
+				"id": "cv-education",
+				"title": "Education",
+				"type": "education",
+				"content": [
+					{
+						"date": "Sep'25 - May'27",
+						"degree": "Master of Science, Computer Science",
+						"institution": "New York University",
+						"location": "New York",
+						"description": "Focusing on foundational Reinforcement Learning and LLM finetuning."
+					},
+					{
+						"date": "Jul'19 - Jun'23",
+						"degree": "Bachelor of Technology, Data Science and Engineering",
+						"institution": "Indian Institute of Technology Mandi",
+						"location": "India",
+						"description": "Studied Computer Science with focus on Deep Learning and Computer Vision"
+					}
+				]
+			},
+			{
+				"id": "cv-interests",
+				"title": "Academic Interests",
+				"type": "categorized-list",
+				"content": [
+					{
+						"category": "Artificial Intelligence and Machine Learning",
+						"items": [
+							"Computer Vision",
+							"Large Language Models",
+							"Reinforcement Learning"
+						]
+					},
+					{
+						"category": "Computer Science",
+						"items": [
+							"Backend systems development",
+							"Relational database engines",
+							"Operating systems and multiprocessing"
+						]
+					},
+					{
+						"category": "Math",
+						"items": [
+							"Probability",
+							"Linear Algebra"
+						]
+					}
+				]
+			},
+			{
+				"id": "cv-work",
+				"title": "Work Experience",
+				"type": "experience",
+				"content": [
+					{
+						"date": "Jul'23 - Jul'25",
+						"title": "Software Engineer",
+						"company": "Walmart",
+						"location": "Bengaluru, India",
+						"description": "Led multiple **mobile engineering and analytics initiatives**, including building an **app analytics framework** to inform product decisions, optimizing **telemetry and logging** to cut costs, and **modularizing large-scale mobile apps** for efficient development. Also contributed to a **cross-platform quality inspection app** enabling real-time operational feedback."
+					},
+					{
+						"date": "Jan'22 - Jun'22",
+						"title": "Data Engineer",
+						"company": "ODE Holdings Inc,",
+						"location": "Arizona, United States",
+						"details": [
+							"Built **end-to-end AWS data pipelines**, orchestrating **ETL workflows** with **Glue and Lambda** to securely process and store data for **2,000+ users** across **30+ applications** in S3.",
+							"Architected scalable infrastructure integrating multi-source personal data to deliver actionable insights for client-facing analytics."
+						]
+					}
+				]
+			},
+			{
+				"id": "cv-research",
+				"title": "Research Experience",
+				"type": "experience",
+				"content": [
+					{
+						"date": "Nov'25 - Present",
+						"title": "Research Assistant",
+						"company": "NYU Langone Health",
+						"location": "New York, United States",
+						"details": [
+							"Developed an **end-to-end multimodal deep learning pipeline** for time-to-total knee replacement prediction, integrating 3D knee MRI with tabular clinical data across **3,000+ patients**.",
+							"Modeled as survival analysis using **DAFT-based conditioning** and **multimodal attention**, achieving C-index up to 0.85 and **65–67% risk stratification accuracy**."
+						]
+					}
+				]
+			},
+			{
+				"id": "cv-skills",
+				"title": "Technical Skills",
+				"type": "list",
+				"content": [
+					"**Programming Languages:** Python, C++, Go, TypeScript",
+					"**Query Languages:** PostgreSQL, PL/pgSQL, PostGIS",
+					"**DevTools:** Git, Bash, Powershell, Docker, Postman, Linux, Anaconda, Google Cloud App Engine(GCP).",
+					"**Libraries/Frameworks:** Flask, OpenCV, Tensorflow, PyTorch, OpenAI Gym, Numpy, Pandas."
+				]
+			},
+			{
+				"id": "cv-honors",
+				"title": "Honors & Awards",
+				"type": "experience",
+				"content": [
+					{
+						"date": "Nov'25",
+						"title": "AWS Financial Hackathon 2025",
+						"company": "2/220 Teams",
+						"location": "New York, United States",
+						"description": "Created DocuFlow, an auditing intelligence layer using Gemini, Landing AI ADE, and AWS services to convert financial documents into actionable insights and automatically flag invoice–contract mismatches."
+					},
+					{
+						"date": "Sep'25",
+						"title": "NASA Space Apps Challenge 2025",
+						"company": "Best Cloudflare Implementation Award",
+						"location": "Global",
+						"description": "Built a CF Workers–based RAG system for fast PDF ingestion and AI-driven querying, delivering millisecond retrieval and winning first place at NASA NYC."
+					}
+				]
+			},
+			{
+				"id": "cv-other",
+				"title": "Interests",
+				"type": "paragraphs",
+				"content": [
+					"Tech Pragmatist, Bon Vivant, Cinephile, Strength-first Training"
+				]
+			}
+		]
+	},
+	"blog": {
+		"description": "Technical concepts, project breakdowns, lessons learned, and thoughts on software engineering."
+	}
+}
+

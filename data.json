@@ -78,7 +78,7 @@
 		"2024": [
 			{
 				"name": "RSNA 2024 Lumbar Spine Degenerative Classification",
-				"description": "What the project is and why it exists. This addresses a specific problem in the real world. I built this to solve X because Y was insufficient. The core challenge was Z, which I approached by doing A, B, and C.",
+				"description": "Built a UNet–ResNet MRI pipeline to segment lumbar anatomy and classify five degenerative spine conditions across disc levels, predicting severity grades to support faster, standardized diagnosis of spinal stenosis and foraminal or subarticular narrowing.",
 				"techStack": "Pytorch, 3DResNet18, UNet, MultiModal Attention based Fusion",
 				"image": "assets/project_headers/lumbar_spine.png",
 				"imageAlt": "Disc Localisation from Spine MRI",
